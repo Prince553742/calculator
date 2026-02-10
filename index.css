@@ -1,0 +1,57 @@
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.main {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.screen {
+    width: 500px;
+    height: 130px;
+    background-color: rgb(168, 203, 233);
+    border: rgb(0, 0, 0) solid 1px;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.row1, .row2, .row3, .row4, .row5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;    
+}
+
+.row1 button, .row2 button, .row3 button, .row4 button {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(247, 243, 181);
+    border: rgb(0, 0, 0) solid 1px;
+    cursor: pointer;
+}
+
+.row1 button:hover, .row2 button:hover, .row3 button:hover, .row4 button:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.row1 button:active, .row2 button:active, .row3 button:active, .row4 button:active {
+    transform: scale(0.92); 
+    background-color: rgb(255, 111, 0);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: 0.1s; 
+}
+
+
